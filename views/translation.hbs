@@ -1,0 +1,15 @@
+{{#if _id}}
+{{content}}
+{{else}}
+{{#each translations}}
+<article>
+    <h3><a href="/translation/{{_id}}">Language {{language}}</a></h3>
+    <p>Treść {{content}}</p>
+    <p>    <a href="/translation/update/{{_id}}">Update translation</a>
+    </p>
+    <p><a href="/translation/delete/{{_id}}">Delete</a></p>
+
+</article>
+{{/each}}
+<a href="/translation/add">Add post</a>
+{{/if}}
