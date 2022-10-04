@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "6333670e41eab471c64e01e1"
+  },
+  "description": "Tak",
+  "value": 1,
+  "order": 1,
+  "translations": [
+    {
+      "$oid": "633366a641eab471c64e01dc"
+    },
+    {
+      "$oid": "6333670e41eab471c64e01e1"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6333686c41eab471c64e01f8"
+  },
+  "description": "Nie",
+  "value": -1,
+  "order": 3,
+  "translations": [
+    {
+      "$oid": "633366b741eab471c64e01dd"
+    },
+    {
+      "$oid": "633366b741eab471c64e01dd"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "633368ac41eab471c64e01fd"
+  },
+  "description": "NO opinion",
+  "value": 0,
+  "order": 2,
+  "translations": [
+    {
+      "$oid": "6336e3ed5d3c96dfb71682ef"
+    },
+    {
+      "$oid": "633366e541eab471c64e01de"
+    }
+  ]
+}]

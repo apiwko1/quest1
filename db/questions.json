@@ -1,0 +1,11 @@
+[{
+  "_id": {
+    "$oid": "633a99b65d3c96dfb7168327"
+  },
+  "description": "are yo hsy",
+  "translations": [
+    {
+      "$oid": "6336e2e25d3c96dfb71682eb"
+    }
+  ]
+}]

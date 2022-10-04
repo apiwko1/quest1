@@ -1,0 +1,85 @@
+[{
+  "_id": {
+    "$oid": "6333605c41eab471c64e01af"
+  },
+  "content": "Czy jesteś wysoko wrażliwy",
+  "language": "pl",
+  "nr": "1"
+},{
+  "_id": {
+    "$oid": "6333638641eab471c64e01bf"
+  },
+  "content": "Czy lubisz koty? ",
+  "language": "pl",
+  "nr": "2"
+},{
+  "_id": {
+    "$oid": "633363ff41eab471c64e01c1"
+  },
+  "content": "Czy cęsto się denerwujesz? ",
+  "language": "pl",
+  "nr": "3"
+},{
+  "_id": {
+    "$oid": "633366a641eab471c64e01dc"
+  },
+  "content": "Tak ",
+  "language": "pl",
+  "nr": "4"
+},{
+  "_id": {
+    "$oid": "633366b741eab471c64e01dd"
+  },
+  "content": "Nie ",
+  "language": "pl",
+  "nr": "5"
+},{
+  "_id": {
+    "$oid": "633366e541eab471c64e01de"
+  },
+  "content": "Nie mam zdania ",
+  "language": "pl",
+  "nr": "6"
+},{
+  "_id": {
+    "$oid": "6336e2e25d3c96dfb71682eb"
+  },
+  "content": "are yo hsy boy",
+  "language": "en",
+  "nr": "1"
+},{
+  "_id": {
+    "$oid": "6336e3105d3c96dfb71682ec"
+  },
+  "content": "do you like cats? ",
+  "language": "en",
+  "nr": "2"
+},{
+  "_id": {
+    "$oid": "6336e3ca5d3c96dfb71682ed"
+  },
+  "content": "yes ",
+  "language": "en",
+  "nr": "4"
+},{
+  "_id": {
+    "$oid": "6336e3db5d3c96dfb71682ee"
+  },
+  "content": "no ",
+  "language": "en",
+  "nr": "5"
+},{
+  "_id": {
+    "$oid": "6336e3ed5d3c96dfb71682ef"
+  },
+  "content": "no opinion ",
+  "language": "en",
+  "nr": "6"
+},{
+  "_id": {
+    "$oid": "633c1fc27c0691728f39eab0"
+  },
+  "language": "pl",
+  "content": "Ala ma kota abccde",
+  "__v": 0
+}]

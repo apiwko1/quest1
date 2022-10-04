@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "633aa57d5d3c96dfb7168337"
+  },
+  "token": "abc",
+  "age": {
+    "$numberDecimal": "5"
+  },
+  "name": "Jacek",
+  "questions_answers": [
+    {
+      "question_id": {
+        "$oid": "633aa4045d3c96dfb7168331"
+      },
+      "answer_id": {
+        "$oid": "633aa4085d3c96dfb7168333"
+      }
+    },
+    {
+      "question_id": {
+        "$oid": "633aa4e35d3c96dfb7168334"
+      },
+      "answer_id": {
+        "$oid": "633aa4f65d3c96dfb7168335"
+      }
+    }
+  ]
+}]
