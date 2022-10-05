@@ -18,35 +18,33 @@ router.get('/all', (req, res) => {
     })
 })
 
-router.get('/add', function (req, res) {
-    res.render('add_translation');
-});
 
-router.get('/update/:id', function (req, res) {
+router.put('/update/:id', function (req, res) {
 
-    translation.get(req.params.id, function (err, translation) {
-        if (err) res.send(err);
-
-        res.render('update_translation', translation);
-    });
-
-});
-
-router.post('/update/:id', function (req, res) {
-
-    translation.update(req.params.id, req.body, function (err, post) {
-        if (err) res.send(err);
-        res.redirect('/translation');
+    translation.update(req.params.id, req.body, function (err, data) {
+        if(err) {
+            res.status(404);
+            res.json({
+                error: "translation not found"
+            });
+        } else {
+            res.json(data);
+        }
     });
 
 })
 
-router.get('/delete/:id', function (req, res) {
+router.delete('/delete/:id', function (req, res) {
 
-    translation.delete(req.params.id, function (err, translation) {
-        if (err) res.send(err);
-
-        res.redirect('/translation');
+    translation.delete(req.params.id, function (err, data) {
+        if(err) {
+            res.status(404);
+            res.json({
+                error: "Post not found"
+            });
+        } else {
+            res.json(data);
+        }
     });
 
 });
@@ -55,21 +53,28 @@ router.get('/:id', function (req, res) {
 
     translation.get(req.params.id, (err, translation) => {
         if (err) {
-            res.send(err);
+            res.status(404);
+            res.json({
+                error: 'translation not found'
+            });
         } else {
-            res.render('translation', translation)
+            res.json(translation);
         }
 
     })
 });
 
-router.post('/translation/add', function (req, res) {
-
+router.post('/add', function (req, res) {
+    console.log(req.body);
     translation.add(req.body, function (err, translation) {
-        console.log(req.body);
-        if (err) res.send(err);
-
-        res.redirect('/translation')
+        if(err) {
+            res.status(404);
+            res.json({
+                error: "Translation not created"
+            });
+        } else {
+            res.json(translation);
+        }
     })
 });
 
