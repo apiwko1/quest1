@@ -17,7 +17,7 @@ app.set('views', path.join(__dirname, './views'));
 
 app.use('/translation', translationRouter);
 
-app.use('translation/api', translationApiRouter);
+app.use('/api/translation', translationApiRouter);
 
 
 app.listen(8080, () => {
