@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const user = require('./../controllers/user.controller');
+// const auth = require('./../middlewares/auth');
 
 router.post('/signup', function (req, res) {
     user.add(req.body, function (err, user) {

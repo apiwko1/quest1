@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const translation = require('../controllers/translation.controller');
+auth = require('./../middlewares/auth');
 
 
 router.get('/all', (req, res) => {
@@ -64,8 +65,8 @@ router.get('/:id', function (req, res) {
     })
 });
 
-router.post('/add', function (req, res) {
-    console.log(req.body);
+router.post('/add', auth,  function (req, res) {
+   
     translation.add(req.body, function (err, translation) {
         if(err) {
             res.status(404);
